@@ -263,9 +263,12 @@ body {
     background-color: #fd8300;
 }
 
+.contacts-contacts {
+    text-align: center;
+}
+
 .contacts-contacts-main {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .contacts-contacts h2 {
@@ -391,13 +394,14 @@ body {
 }
 
 .feedback-form textarea {
+    max-width: 300px;
     width: 467px;
     height: 106px;
     resize: none;
 }
 
 .feedback-form input[type=submit] {
-    width: 33%;
+    width: 50%;
     font-size: 14rem;
     line-height: 24px;
     color: #fff;
@@ -407,6 +411,7 @@ body {
     border-radius: 21px;
     background-color: #fd8300;
     padding: 15px 30px;
+    margin-bottom: 45px;
 }
 
 .feedback-form input[type=checkbox] {
@@ -460,6 +465,7 @@ body {
 
 .submit-line {
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .banner {
@@ -564,8 +570,13 @@ hr {
     font-family: "Arial";
 }
 
+.price-table {
+    display: block;
+    overflow-x: scroll;
+}
+
 table {
-    width: 100%;
+    min-width: 750px;
     border-collapse: collapse;
     margin: 25px 0;
 }
@@ -622,6 +633,10 @@ tbody td {
 
 .price-description {
     margin-bottom: 25px;
+}
+
+.projects {
+    width: 100%;
 }
 
 .projects .popular-projects {
@@ -809,6 +824,10 @@ footer {
     text-align: center;
 }
 
+.information {
+    margin-bottom: 20px;
+}
+
 .information a {
     color: #666;
     font-size: 14rem;
@@ -856,12 +875,8 @@ footer {
         text-align: center;
     }
 
-    .phone {
-        display: block;
-    }
-
     .house {
-        width: 80%;
+        width: 90%;
         text-align: left;
     }
 
@@ -873,12 +888,7 @@ footer {
 
     .house a {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-    }
-
-    .main-menu {
-        width: 80%;
     }
 
     .wrapper.flex-line-footer {
@@ -900,6 +910,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .wrapper.flex-line {
+        justify-content: space-between;
+    }
+
     .social {
         width: 10%;
     }
@@ -907,7 +921,7 @@ footer {
     .menu {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 50%;
     }
 
     .burger {
@@ -945,17 +959,10 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .wrapper {
-        padding: 0 50px;
-    }
-
+@media screen and (min-width: 1024px) {
     .social {
         width: 12%;
     }
-}
-
-@media screen and (min-width: 1024px) {
     .wrapper {
         padding: 0;
     }
@@ -978,5 +985,19 @@ footer {
 
     .house img {
         width: 75%;
+    }
+
+    .flex-line {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects {
+        width: 70%;
+    }
+
+    .projects img {
+        width: 90%;
     }
 }
